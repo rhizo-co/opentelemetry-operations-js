@@ -257,11 +257,7 @@ export function mapOtelResourceToMonitoredResource(
   } else if (platform === CLOUDPLATFORMVALUES_AWS_EC2) {
     mr = createMonitoredResource(AWS_EC2_INSTANCE, attrs);
   }
-  // Cloud Run and Cloud Functions are not writeable for custom metrics yet
-  else if (
-    includeUnsupportedResources &&
-    platform === CLOUDPLATFORMVALUES_GCP_CLOUD_RUN
-  ) {
+  else if ( platform === CLOUDPLATFORMVALUES_GCP_CLOUD_RUN) {
     mr = createMonitoredResource(CLOUD_RUN_REVISION, attrs);
   } else if (
     includeUnsupportedResources &&
