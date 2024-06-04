@@ -29,7 +29,7 @@ import {
   Timestamp,
   TruncatableString,
 } from './types';
-import {mapOtelResourceToMonitoredResource} from '@google-cloud/opentelemetry-resource-util';
+import {mapOtelResourceToMonitoredResource} from 'rhizo-co-google-cloud-opentelemetry-resource-util';
 import {VERSION} from './version';
 
 const AGENT_LABEL_KEY = 'g.co/agent';

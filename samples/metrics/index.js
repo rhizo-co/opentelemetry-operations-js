@@ -22,7 +22,7 @@ const {
 } = require("@google-cloud/opentelemetry-cloud-monitoring-exporter");
 const {
   GcpDetectorSync,
-} = require("@google-cloud/opentelemetry-resource-util");
+} = require("rhizo-co-google-cloud-opentelemetry-resource-util");
 
 // Create MeterProvider
 const meterProvider = new MeterProvider({

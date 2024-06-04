@@ -1,5 +1,5 @@
 {
-  "name": "@rhizo-co/google-cloud-opentelemetry-resource-util",
+  "name": "rhizo-co-google-cloud-opentelemetry-resource-util",
   "version": "2.2.0",
   "description": "Resource util used by other @google-cloud/opentelemetry* packages",
   "main": "build/src/index.js",
@@ -35,10 +35,6 @@
     "LICENSE",
     "README.md"
   ],
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://wombat-dressing-room.appspot.com"
-  },
   "config": {
     "snap-shot-it": {
       "sortSnapshots": true

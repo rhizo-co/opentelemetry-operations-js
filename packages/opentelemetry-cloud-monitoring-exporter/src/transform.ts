@@ -21,7 +21,7 @@ import {
   ExponentialHistogram,
 } from '@opentelemetry/sdk-metrics';
 import {ValueType as OTValueType, diag} from '@opentelemetry/api';
-import {MonitoredResource} from '@google-cloud/opentelemetry-resource-util';
+import {MonitoredResource} from 'rhizo-co-google-cloud-opentelemetry-resource-util';
 import {
   MetricDescriptor,
   MetricKind,

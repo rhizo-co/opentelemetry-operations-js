@@ -29,7 +29,7 @@ import {
   TraceExporter,
   TraceExporterOptions,
 } from '@google-cloud/opentelemetry-cloud-trace-exporter';
-import {GcpDetectorSync} from '@google-cloud/opentelemetry-resource-util';
+import {GcpDetectorSync} from 'rhizo-co-google-cloud-opentelemetry-resource-util';
 import * as constants from './constants';
 import {context, SpanKind} from '@opentelemetry/api';
 import {AsyncHooksContextManager} from '@opentelemetry/context-async-hooks';

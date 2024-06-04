@@ -31,7 +31,7 @@ import {transformMetricDescriptor, createTimeSeries} from './transform';
 import {MetricDescriptor, TimeSeries} from './types';
 import {mountProjectIdPath, partitionList} from './utils';
 import {diag} from '@opentelemetry/api';
-import {mapOtelResourceToMonitoredResource} from '@google-cloud/opentelemetry-resource-util';
+import {mapOtelResourceToMonitoredResource} from 'rhizo-co-google-cloud-opentelemetry-resource-util';
 
 import {VERSION} from './version';
 

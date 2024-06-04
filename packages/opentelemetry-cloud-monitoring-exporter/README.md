@@ -19,7 +19,7 @@ npm install --save @google-cloud/opentelemetry-cloud-monitoring-exporter
 const { MeterProvider, PeriodicExportingMetricReader } = require("@opentelemetry/sdk-metrics");
 const { Resource } = require("@opentelemetry/resources");
 const { MetricExporter } = require("@google-cloud/opentelemetry-cloud-monitoring-exporter");
-const { GcpDetectorSync } = require("@google-cloud/opentelemetry-resource-util");
+const { GcpDetectorSync } = require("rhizo-co-google-cloud-opentelemetry-resource-util");
 
 // Create MeterProvider
 const meterProvider = new MeterProvider({
