@@ -256,8 +256,7 @@ export function mapOtelResourceToMonitoredResource(
     mr = createMonitoredResource(GAE_INSTANCE, attrs);
   } else if (platform === CLOUDPLATFORMVALUES_AWS_EC2) {
     mr = createMonitoredResource(AWS_EC2_INSTANCE, attrs);
-  }
-  else if ( platform === CLOUDPLATFORMVALUES_GCP_CLOUD_RUN) {
+  } else if (platform === CLOUDPLATFORMVALUES_GCP_CLOUD_RUN) {
     mr = createMonitoredResource(CLOUD_RUN_REVISION, attrs);
   } else if (
     includeUnsupportedResources &&
@@ -300,7 +299,6 @@ function createMonitoredResource(
 
   Object.entries(mapping).map(([mrKey, mapConfig]) => {
     let mrValue: AttributeValue | undefined;
-    const test: string | undefined = undefined;
     for (const otelKey of mapConfig.otelKeys) {
       if (
         otelKey in resourceAttrs &&

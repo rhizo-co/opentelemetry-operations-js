@@ -1,4 +1,5 @@
-exports['mapOtelResourceToMonitoredResource for k8s resource should map to k8s_cluster on aws_eks 1'] = {
+exports[
+  'mapOtelResourceToMonitoredResource for k8s resource should map to k8s_cluster on aws_eks 1'] = {
   "type": "k8s_cluster",
   "labels": {
     "location": "myavailzone",
@@ -313,12 +314,12 @@ exports['mapOtelResourceToMonitoredResource should map cloud_function to generic
 }
 
 exports['mapOtelResourceToMonitoredResource should map cloud_run_revision to generic_task when not including unsupported resources" 1'] = {
-  "type": "generic_task",
+  "type": "cloud_run_revision",
   "labels": {
     "location": "myregion",
-    "namespace": "servicens",
-    "job": "servicename",
-    "task_id": "serviceinstanceid"
+    "service_name": "myfaasname",
+    "configuration_name": "myfaasname",
+    "revision_name": "myfaasversion"
   }
 }
 
